@@ -18,7 +18,18 @@
     <link href="https://cdn.jsdelivr.net/gh/vsalvino/computer-modern@main/fonts/typewriter.css" rel="stylesheet">
     <link rel="stylesheet"
           href="{{ '/style.css' | relative_url }}">
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
 
+    <script async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
 </head>
 
 <body>
@@ -30,6 +41,7 @@
                 <a href="{{ '/profile/' | relative_url }}" {% if page.url == '/profile/' %}aria-current="page"{% endif %}>Profile</a>
                 <a href="{{ '/publications/' | relative_url }}" {% if page.url == '/publications/' %}aria-current="page"{% endif %}>Publications</a>
                 <a href="{{ '/documents/' | relative_url }}" {% if page.url == '/documents/' %}aria-current="page"{% endif %}>Writing</a>
+                <a href="{{ '/blog/' | relative_url }}" {% if page.url == '/blog/' or page.layout == 'post' %}aria-current="page"{% endif %}>Blog</a>
             </nav>
         </header>
 

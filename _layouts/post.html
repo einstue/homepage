@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<article class="post">
+
+    <header class="post-header">
+
+        <p class="post-meta">
+            {{ page.date | date: "%B %-d, %Y" }}
+            {% if page.category %}
+            · {{ page.category }}
+            {% endif %}
+            {% if page.level %}
+            · {{ page.level }}
+            {% endif %}
+        </p>
+
+        <h1>{{ page.title }}</h1>
+
+        {% if page.description %}
+        <p class="post-description">
+            {{ page.description }}
+        </p>
+        {% endif %}
+
+    </header>
+
+    <div class="post-content">
+
+        {{ content }}
+
+    </div>
+
+</article>
