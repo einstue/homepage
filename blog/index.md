@@ -9,7 +9,7 @@ permalink: /blog/
     <h1>Blog</h1>
 
     <p class="intro-copy">
-        Notes on physics and mathematics
+        Notes on mathematics, physics, and mathematical physics.
     </p>
 
 </section>
