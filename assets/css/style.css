@@ -206,6 +206,37 @@ footer { align-items: end; display: grid; gap: 2rem; grid-template-columns: 1fr 
     color: var(--muted);
 }
 
+.language-switcher {
+    margin-top: 1.25rem;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.language-switcher a {
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.language-switcher a:hover {
+    color: var(--ink);
+}
+
+.language-current {
+    display: inline-block;
+    padding: 0.2rem 0.45rem;
+    border: 1px solid var(--muted);
+    border-radius: 3px;
+    color: var(--ink);
+    font-weight: 600;
+}
+
+.language-separator {
+    margin: 0 0.4rem;
+    color: var(--muted);
+}
 
 @media (max-width: 720px) {
   .page-main { padding: 3.5rem 0; }

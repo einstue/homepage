@@ -17,37 +17,37 @@ permalink: /blog/
 <section class="blog-list">
 
     {% for post in site.posts %}
+    {% if post.show == true %}
+        <article class="blog-entry">
 
-    <article class="blog-entry">
+            <p class="blog-meta">
+                {{ post.date | date: "%B %-d, %Y" }}
+                {% if post.category %}
+                · {{ post.category }}
+                {% endif %}
+                {% if post.level %}
+                · {{ post.level }}
+                {% endif %}
+            </p>
 
-        <p class="blog-meta">
-            {{ post.date | date: "%B %-d, %Y" }}
-            {% if post.category %}
-            · {{ post.category }}
+            <h2>
+                <a href="{{ post.url | relative_url }}">
+                    {{ post.title }}
+                </a>
+            </h2>
+
+            {% if post.description %}
+            <p class="blog-excerpt">
+                {{ post.description }}
+            </p>
+            {% else %}
+            <p class="blog-excerpt">
+                {{ post.excerpt | strip_html | truncatewords: 30 }}
+            </p>
             {% endif %}
-            {% if post.level %}
-            · {{ post.level }}
-            {% endif %}
-        </p>
 
-        <h2>
-            <a href="{{ post.url | relative_url }}">
-                {{ post.title }}
-            </a>
-        </h2>
-
-        {% if post.description %}
-        <p class="blog-excerpt">
-            {{ post.description }}
-        </p>
-        {% else %}
-        <p class="blog-excerpt">
-            {{ post.excerpt | strip_html | truncatewords: 30 }}
-        </p>
-        {% endif %}
-
-    </article>
-
+        </article>
+    {% endif %}
     {% endfor %}
 
 </section>

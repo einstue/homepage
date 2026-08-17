@@ -9,19 +9,19 @@ category: "General Relativity"
 
 level: "Undergraduate"
 
-show: true
+show: false
 
 lang-id: test-post
 
-lang: en
+lang: vi
 
 description: >
   A small test post for my new mathematics and physics blog. Stay tune for more content in the future!
 ---
 
-## Geodesic equation
+## Phương trình đường trắc địa
 
-A geodesic satisfies
+Một đường trắc địa thỏa mãn phương trình
 
 $$
 \frac{d^2 x^\mu}{d\lambda^2}
@@ -32,7 +32,7 @@ $$
 =0.
 $$
 
-The Riemann curvature tensor is
+Tenxơ độ cong Riemann được tính bằng
 
 $$
 R^\rho{}_{\sigma\mu\nu}
@@ -48,25 +48,25 @@ R^\rho{}_{\sigma\mu\nu}
 \Gamma^\lambda_{\mu\sigma}.
 $$
 
-The Ricci tensor is
+Tenxơ Ricci được định nghĩa là
 
 $$
 R_{\mu\nu}=R^\rho{}_{\mu\rho\nu}.
 $$
 
-The scalar curvature is
+Độ cong vô hướng được định nghĩa là
 
 $$
 R = R^{\mu}_{~~~\mu}.
 $$
 
-The Einstein tensor is 
+Tenxơ Einstein được định nghĩa là
 
 $$
 G_{\mu\nu} = R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu}.
 $$
 
-And Einstein's equation is
+Phương trình Einstein là
 
 $$
 G_{\mu\nu}
