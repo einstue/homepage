@@ -38,7 +38,7 @@ layout: default
                         {% else %}
                             {% for post in site.posts %}
                                 {% if post.lang-id == page.lang-id and post.lang == "en" %}
-                                    <a href="{{ post.url }}">EN</a>
+                                    <a href="{{ post.url | relative_url }}">EN</a>
                                 {% endif %}
                             {% endfor %}
                         {% endif %}
@@ -50,7 +50,7 @@ layout: default
                         {% else %}
                             {% for post in site.posts %}
                                 {% if post.lang-id == page.lang-id and post.lang == "vi" %}
-                                    <a href="{{ post.url }}">VI</a>
+                                    <a href="{{ post.url | relative_url }}">VI</a>
                                 {% endif %}
                             {% endfor %}
                         {% endif %}
