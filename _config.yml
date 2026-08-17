@@ -1,8 +1,8 @@
 title: Tue Tai Nguyen
 description: Academic homepage of Tue Tai Nguyen
 
-url: "https://einstue.github.io//homepage"
-baseurl: ""
+url: "https://einstue.github.io"
+baseurl: "/homepage"
 
 markdown: kramdown
 
