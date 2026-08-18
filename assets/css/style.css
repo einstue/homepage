@@ -18,7 +18,7 @@ a { color: inherit; text-underline-offset: 0.18em; }
 .site-header { align-items: center; border-bottom: 1px solid var(--rule); display: flex; justify-content: space-between; padding: 22px 0; }
 .wordmark { font-family: var(--serif); font-size: var(--nav-size); font-weight: 500; letter-spacing: 0.08em; text-decoration: none; }
 nav { display: flex; flex-wrap: wrap; gap: 1.2rem; }
-nav a, .footer-links a { font-family: var(--mono); font-size: var(--nav-size); text-decoration: none; text-transform: uppercase; letter-spacing: 0.035em; }
+nav a, .footer-links a { font-family: var(--serif); font-size: var(--nav-size); text-decoration: none; text-transform: uppercase; letter-spacing: 0.035em; }
 nav a:hover, .footer-links a:hover, .essay-entry h3 a:hover, .content-section a:hover, .timeline-item a:hover, .publication-item a:hover { color: var(--accent); }
 nav a[aria-current="page"] { color: var(--accent); }
 
@@ -275,7 +275,7 @@ footer { align-items: end; display: grid; gap: 2rem; grid-template-columns: 1fr 
 
     .profile-photo img{
 
-        width:150px;
+        width:300px;
     }
 
 }
